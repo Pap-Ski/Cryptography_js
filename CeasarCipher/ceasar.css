@@ -1,0 +1,26 @@
+div{
+    border: 5px black solid;
+   /* margin-left: 35%;
+    margin-right: 35%;*/
+    margin: auto;
+    width: 50%;
+}
+
+#heading{
+    background-color: rgba(138, 43, 226,0.9);
+    text-align: center;
+}
+
+#content{
+    background-color: rgba(138, 43, 226,0.5);
+    padding-top: 10px;
+}
+
+h1{
+    font-family: Jokerman;
+}
+
+p{
+    font-size: large;
+    font-family: Cambria;
+}
