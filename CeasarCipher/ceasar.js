@@ -1,4 +1,4 @@
-document.getElementById("bPlainText").onclick = function(){
+document.getElementById("bEncrypt").onclick = function(){
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const plainText = document.getElementById("plainText").value.toUpperCase();
     let cipherText = "";
