@@ -1,26 +1,62 @@
-div{
-    border: 5px black solid;
-   /* margin-left: 35%;
-    margin-right: 35%;*/
-    margin: auto;
-    width: 50%;
+:root {
+  --ff-all: "Ubuntu", sans-serif;
 }
 
-#heading{
-    background-color: rgba(138, 43, 226,0.9);
-    text-align: center;
+* {
+  font-family: var(--ff-all);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 200vh;
+}
+.container {
+  width: 90%;
+  background: #fff;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
-#content{
-    background-color: rgba(138, 43, 226,0.5);
-    padding-top: 10px;
+header {
+  padding: 1em;
+  border-bottom: 5px solid hsl(237, 50%, 50%);
 }
 
-h1{
-    font-family: Jokerman;
+.messageInput,
+.encryptedMessage {
+  margin: 1em 0;
+}
+textarea {
+  padding: 0.5em;
+  font-size: 0.9rem;
+}
+.message:focus {
+  outline: 2px solid hsl(237, 50%, 50%);
+}
+p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
 }
 
-p{
-    font-size: large;
-    font-family: Cambria;
+button {
+  background: hsl(237, 50%, 50%);
+  color: white;
+  font-size: 1rem;
+  width: 30%;
+  padding: 1em;
+  border-radius: 2em;
+  border: 0;
+}
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 50%, 60%),
+    hsl(288, 71%, 25%)
+  );
+  transform: scale(1.1);
 }
