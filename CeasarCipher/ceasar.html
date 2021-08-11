@@ -11,59 +11,43 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header><h1>ENCRYPT YOUR MESSAGE</h1></header>
-      <section>
-        <div class="messageInput">
-          <p>Message</p>
-          <textarea
-            autofocus
-            name="message"
-            class="message"
-            id="plainText"
-            cols="50"
-            rows="10"
-            placeholder="Enter your message"
-          ></textarea>
-        </div>
-        <button id="bEncrypt">Encrypt</button>
-        <div class="encryptedMessage">
-          <p>Encrypted Message</p>
-          <textarea
-            disabled
-            name="encryptedMessage"
-            id="cipherText"
-            cols="50"
-            rows="10"
-          ></textarea>
-        </div>
-      </section>
-    </div>
-    <!-- <br><br>
-    <div id = "heading">
-      <h1>ENCRYPT YOUR MESSAGE<h1>
-    </div>
-    <div id="content">
-      <table align="center" cellspacing="20px">
-        <tr>
-          <td><p>Message</p></td>
-          <td>
-            <textarea autofocus id="plainText" rows="10" cols="50" placeholder="Enter message here..."></textarea>
-          </td>
-        </tr>
-        <tr><td align="center" colspan="2"><button id="bEncrypt">Click To Encrypt</button></td></tr>
-        <tr>
-          <td>
+    <main>
+      <div class="container">
+        <header><h1>ENCRYPT YOUR MESSAGE</h1></header>
+        <nav>
+          <h2 id="ceasarTab" class="tab toggle-tab">Ceaser</h2>
+          <h2 id="vigenereTab" class="tab">Vigenere</h2>
+          <h2 id="hillTab" class="tab">Hill</h2>
+        </nav>
+        <section id="ceasar">
+          <div class="messageInput">
+            <p>Message</p>
+            <textarea
+              autofocus
+              name="message"
+              class="message"
+              id="plainText"
+              cols="50"
+              rows="10"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button id="bEncrypt">Encrypt</button>
+          <div class="encryptedMessage">
             <p>Encrypted Message</p>
-          </td>
-          <td>
-            <textarea disabled id="cipherText" rows="10" cols="50"></textarea>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <h3 align = "center">NB: Encryption uses Ceasar Cipher</h3>
-    <p align = "center">&copyPapSki</p> -->
-    <script src="ceasar.js"></script>
+            <textarea
+              disabled
+              name="encryptedMessage"
+              id="cipherText"
+              cols="50"
+              rows="10"
+            ></textarea>
+          </div>
+        </section>
+        <section id="vigenere">asdfasdf</section>
+        <section id="hill">asdfas</section>
+      </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -8,17 +8,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-image: url(./images/background.jpg);
-  background-repeat: no-repeat;
+  background: url(./images/background.jpg) no-repeat center/cover;
   background-size: 100vw 200vh;
 }
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
 .container {
-  width: 90%;
+  position: relative;
+  width: 80%;
+  /* height: 50vh; */
   background: #fff;
   text-align: center;
-  margin: 1rem auto;
-  padding: 1rem;
+  /* margin: 20rem auto; */
+  padding: 2rem 4rem;
   border-radius: 1rem;
 }
 
@@ -27,19 +38,63 @@ header {
   border-bottom: 5px solid hsl(237, 50%, 50%);
 }
 
-.messageInput,
-.encryptedMessage {
+nav {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: hsl(237, 72%, 80%);
+}
+
+.toggle-tab {
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.tag {}
+
+h2 {
+  /* text-align: left; */
+  width: 25%;
+  max-width: 12rem;
+  padding: 1em;
+}
+
+h2:hover {
+  background-color: hsl(236, 63%, 85%);
+  cursor: pointer;
+}
+
+section {
+  width: 96%;
+  /* position: absolute; */
+}
+
+#vigenere, #hill {
+  display: none;
+}
+
+.messageInput, .encryptedMessage {
   margin: 1em 0;
 }
+
 textarea {
+  width: 50%;
+  height: 9rem;
   padding: 0.5em;
   font-size: 0.9rem;
 }
+
 .message:focus {
   outline: 2px solid hsl(237, 50%, 50%);
 }
+
 p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5em;
 }
 
@@ -52,11 +107,8 @@ button {
   border-radius: 2em;
   border: 0;
 }
+
 button:hover {
-  background-image: linear-gradient(
-    to right,
-    hsl(240, 50%, 60%),
-    hsl(288, 71%, 25%)
-  );
+  background-image: linear-gradient( to right, hsl(240, 50%, 60%), hsl(288, 71%, 25%));
   transform: scale(1.1);
 }
