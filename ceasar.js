@@ -1,5 +1,6 @@
 export function ceasarFunc() {
-  document.getElementById("bEncrypt").onclick = function () {
+  let encrypt = document.getElementById("bEncrypt");
+  encrypt.addEventListener("click", function () {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const plainText = document.getElementById("plainText").value.toUpperCase();
     let cipherText = "";
@@ -15,5 +16,5 @@ export function ceasarFunc() {
       }
     }
     document.getElementById("cipherText").innerText = cipherText;
-  };
+  });
 }
