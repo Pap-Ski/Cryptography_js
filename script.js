@@ -1,3 +1,5 @@
+import { ceasarFunc } from "./ceasar.js";
+
 const ceasarSection = document.getElementById("ceasar");
 const vigenereSection = document.getElementById("vigenere");
 const hillSection = document.getElementById("hill");
@@ -38,3 +40,5 @@ ceasarTab.addEventListener("click", function () {
   this.classList.add("toggle-tab");
   // this.classList.toggle("hover-tab");
 });
+
+ceasarFunc();

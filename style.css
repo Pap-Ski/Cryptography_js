@@ -9,11 +9,10 @@
   box-sizing: border-box;
 }
 
-body {
-  background: url(./images/background.jpg) no-repeat center/cover;
-}
+body {}
 
 main {
+  background: url(./images/background.jpg) no-repeat center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -21,6 +20,7 @@ main {
 }
 
 .container {
+  /* display: none; */
   position: relative;
   width: 90%;
   margin: 2em auto;
@@ -113,3 +113,9 @@ button:hover {
   color: hsl(237, 50%, 50%);
   cursor: pointer;
 }
+
+/* @media (mix-width: 375px) {
+  main {
+    height: 90vh;
+  }
+} */
