@@ -9,18 +9,14 @@
   box-sizing: border-box;
 }
 
-body {}
-
-main {
-  background: url(./images/background.jpg) no-repeat center/cover;
-  height: 100vh;
+body {
+  background: url(./images/background2.jpg) no-repeat center/cover;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .container {
-  /* display: none; */
   position: relative;
   width: 90%;
   margin: 2em auto;
@@ -40,15 +36,12 @@ h1 {
 }
 
 nav {
-  width: 100%;
-  margin: 0 auto;
   border-radius: 1rem 1rem 0 0;
   margin-top: 1em;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: hsl(237, 72%, 80%);
+  background-color: hsl(237, 80%, 73%);
 }
 
 .toggle-tab {
