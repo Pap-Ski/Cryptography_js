@@ -6,6 +6,7 @@ export function ceasarFunc() {
     let cipherText = "";
 
     for (let i = 0; i < plainText.length; i++) {
+      // put non-alphabetic characters in the ciphertext
       if (!letters.includes(plainText[i])) {
         cipherText += plainText[i];
         continue;
