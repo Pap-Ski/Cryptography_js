@@ -1,4 +1,5 @@
 import { ceasarFunc } from "./ceasar.js";
+import { vigenereFunc } from "./vigenere.js";
 
 const ceasarSection = document.getElementById("ceasar");
 const vigenereSection = document.getElementById("vigenere");
@@ -42,3 +43,4 @@ ceasarTab.addEventListener("click", function () {
 });
 
 ceasarFunc();
+vigenereFunc();

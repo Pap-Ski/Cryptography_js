@@ -1,23 +1,35 @@
-// const plainText = "WE ARE DISCOVERED SAVE YOURSELF!";
-// const key = "DECEPTIVE";
+export function vigenereFunc() {
+  let encrypt = document.getElementById("vigenereEncrypt");
 
-function vigenereFunc(plainText, key) {
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  encrypt.addEventListener("click", function () {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let cipherText = "";
+    let plainText = document
+      .getElementById("vigenerePlainText")
+      .value.toUpperCase();
+    let key = document.getElementById("key").value.toUpperCase();
 
-  let cipherText = "";
+    if (key === "") {
+      document.querySelector(".error").style.display = "block";
+      setTimeout(
+        () => (document.querySelector(".error").style.display = "none"),
+        3000
+      );
+    } else {
+      for (let i = 0, j = 0; i < plainText.length; i++) {
+        if (!letters.includes(plainText[i])) {
+          cipherText += plainText[i];
+          continue;
+        }
+        cipherText +=
+          letters[
+            (letters.indexOf(plainText[i]) + letters.indexOf(key[j])) % 26
+          ];
 
-  for (let i = 0, j = 0; i < plainText.length; i++) {
-    if (!letters.includes(plainText[i])) {
-      cipherText += plainText[i];
-      continue;
+        if (j === key.length - 1) j = -1;
+        j++;
+      }
+      document.getElementById("vigenereCipherText").innerText = cipherText;
     }
-    cipherText +=
-      letters[(letters.indexOf(plainText[i]) + letters.indexOf(key[j])) % 26];
-
-    if (j === key.length - 1) j = -1;
-    j++;
-  }
-  return cipherText;
+  });
 }
-
-console.log(vigenereFunc("YOU WON", "JAZZ"));

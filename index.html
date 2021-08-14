@@ -26,25 +26,54 @@
               autofocus
               name="message"
               class="message"
-              id="plainText"
+              id="ceasarPlainText"
               cols="50"
               rows="10"
               placeholder="Enter your message"
             ></textarea>
           </div>
-          <button id="bEncrypt">Encrypt</button>
+          <button id="ceasarEncrypt">Encrypt</button>
           <div class="encryptedMessage">
             <p>Encrypted Message</p>
             <textarea
               disabled
               name="encryptedMessage"
-              id="cipherText"
+              id="ceasarCipherText"
               cols="50"
               rows="10"
             ></textarea>
           </div>
         </section>
-        <section id="vigenere">asdfasdf</section>
+        <section id="vigenere">
+          <div class="messageInput">
+            <p>Message</p>
+            <textarea
+              autofocus
+              name="message"
+              class="message"
+              id="vigenerePlainText"
+              cols="50"
+              rows="10"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <div class="key-input">
+            <label for="key">Key</label>
+            <input placeholder="Enter key here..." required type="text" name="key" id="key">
+            <p class="error">A key is required for this encrytion.👆🏽</p>
+          </div>
+          <button id="vigenereEncrypt">Encrypt</button>
+          <div class="encryptedMessage">
+            <p>Encrypted Message</p>
+            <textarea
+              disabled
+              name="encryptedMessage"
+              id="vigenereCipherText"
+              cols="50"
+              rows="10"
+            ></textarea>
+          </div>
+        </section>
         <section id="hill">asdfas</section>
       </div>
     </>

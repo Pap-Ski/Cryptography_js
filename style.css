@@ -2,6 +2,8 @@
   --ff-all: "Ubuntu", sans-serif;
 }
 
+/* GENERAL STYLINGS */
+
 * {
   font-family: var(--ff-all);
   margin: 0;
@@ -105,6 +107,39 @@ button:hover {
   background: white;
   color: hsl(237, 50%, 50%);
   cursor: pointer;
+}
+
+/* VIGENERE STYLING */
+
+.key-input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  font-size: 2.2rem;
+  margin: 2em 0;
+}
+
+.key-input input {
+  width: 50%;
+  padding: .6em;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.key-input input:focus {
+  border: 2px solid hsl(237, 50%, 50%);
+}
+
+.error {
+  display: none;
+  position: absolute;
+  left: 30%;
+  bottom: -2rem;
+  font-size: 1rem;
+  color: red;
 }
 
 /* @media (mix-width: 375px) {

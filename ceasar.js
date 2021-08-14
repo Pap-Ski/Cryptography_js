@@ -1,8 +1,10 @@
 export function ceasarFunc() {
-  let encrypt = document.getElementById("bEncrypt");
+  let encrypt = document.getElementById("ceasarEncrypt");
   encrypt.addEventListener("click", function () {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const plainText = document.getElementById("plainText").value.toUpperCase();
+    const plainText = document
+      .getElementById("ceasarPlainText")
+      .value.toUpperCase();
     let cipherText = "";
 
     for (let i = 0; i < plainText.length; i++) {
@@ -16,6 +18,6 @@ export function ceasarFunc() {
           cipherText += letters[(j + 3) % letters.length];
       }
     }
-    document.getElementById("cipherText").innerText = cipherText;
+    document.getElementById("ceasarCipherText").innerText = cipherText;
   });
 }
