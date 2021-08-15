@@ -134,7 +134,6 @@ button:hover {
 }
 
 .error {
-  display: none;
   position: absolute;
   left: 30%;
   bottom: -2rem;
